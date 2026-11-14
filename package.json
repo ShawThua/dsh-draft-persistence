@@ -1,0 +1,63 @@
+{
+  "name": "dsh-draft-persistence",
+  "version": "0.1.0",
+  "description": "Persist unsent composer drafts per Session on the DSH Host and restore them after reload, Session switch, or restart.",
+  "license": "MIT",
+  "author": "ShawThua",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node test/host.test.mjs && node test/client.test.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "draft",
+    "drafts",
+    "composer",
+    "autosave",
+    "persistence"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShawThua/dsh-draft-persistence.git"
+  },
+  "homepage": "https://github.com/ShawThua/dsh-draft-persistence#readme",
+  "bugs": {
+    "url": "https://github.com/ShawThua/dsh-draft-persistence/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

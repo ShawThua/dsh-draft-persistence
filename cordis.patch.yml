@@ -1,0 +1,7 @@
+# Draft persistence bundle: Host storage + loopback route, plus a Client module
+# that mirrors the composer draft of the viewed Session.
+- insert:
+    - id: draft-persistence
+      name: 'dsh-draft-persistence'
+      config: {}
+

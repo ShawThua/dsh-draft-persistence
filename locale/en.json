@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Draft persistence",
+    "description": "Saves unsent composer drafts per session on the Host and restores them after reload or restart."
+  }
+}
