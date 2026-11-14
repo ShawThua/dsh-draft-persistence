@@ -26,7 +26,7 @@ That is how a long unsent draft can disappear while the Session log is perfectly
 
 ## Requirements
 
-- DSH with the **Web** profile (`dsh web --profile web`); built and verified against **0.2.2-rc.1**.
+- DSH with the **Web** profile (`dsh web --profile web`); built and verified against **0.2.2-rc.1** and **0.2.2-rc.3**.
 - Node `^22.19.0 || >=24.0.0` (the Host half runs inside DSH; there is no separate process).
 - No runtime dependencies and no build step: both halves are plain ESM/JS.
 
@@ -133,7 +133,7 @@ scripts/e2e.mjs   live end-to-end verification helper
 
 ## Compatibility
 
-The plugin relies on the public composer surfaces shipped in DSH 0.2.2-rc.1:
+The plugin relies on the public composer surfaces shipped in DSH 0.2.2-rc.1 and still present in 0.2.2-rc.3:
 
 - `ctx.conversation.input.shell(sessionId)` and its `state` snapshot store,
 - `state.getSnapshot().draft` / `.draftRev`,
@@ -149,3 +149,4 @@ Remove the bundle with the plugin manager. The stored drafts file is left in pla
 ## License
 
 MIT
+

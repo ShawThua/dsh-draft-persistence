@@ -26,7 +26,7 @@ DSH 自带草稿持久化，但只写浏览器 `localStorage`（键 `dsh.convers
 
 ## 环境要求
 
-- DSH **Web** profile（`dsh web --profile web`），在 **0.2.2-rc.1** 上验证。
+- DSH **Web** profile（`dsh web --profile web`），在 **0.2.2-rc.1** 与 **0.2.2-rc.3** 上验证。
 - Node `^22.19.0 || >=24.0.0`（Host 半边跑在 DSH 进程内，没有独立进程）。
 - 零运行时依赖、无需构建。
 
@@ -130,7 +130,7 @@ scripts/e2e.mjs   真机端到端验证脚本
 
 ## 兼容性
 
-依赖 DSH 0.2.2-rc.1 的公开输入框接口：`ctx.conversation.input.shell(sessionId)` 及其 `state`、`draftSnapshot`、`setDraft(...)`、`conversation.input.dock`（带 `sessionId` prop）。这些是插件公开面，但 DSH 升级仍可能变动；升级后草稿不恢复，先跑 `scripts/e2e.mjs`，若 console 出现 `slot entry crashed in 'conversation.input.dock'` 就是契约变了。
+依赖 DSH 0.2.2-rc.1 / rc.3 的公开输入框接口：`ctx.conversation.input.shell(sessionId)` 及其 `state`、`draftSnapshot`、`setDraft(...)`、`conversation.input.dock`（带 `sessionId` prop）。这些是插件公开面，但 DSH 升级仍可能变动；升级后草稿不恢复，先跑 `scripts/e2e.mjs`，若 console 出现 `slot entry crashed in 'conversation.input.dock'` 就是契约变了。
 
 ## 卸载
 
@@ -139,3 +139,4 @@ scripts/e2e.mjs   真机端到端验证脚本
 ## 许可证
 
 MIT
+
