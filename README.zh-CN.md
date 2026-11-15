@@ -1,6 +1,7 @@
 # dsh-draft-persistence
 
 [![CI](https://github.com/ShawThua/dsh-draft-persistence/actions/workflows/ci.yml/badge.svg)](https://github.com/ShawThua/dsh-draft-persistence/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/dsh-draft-persistence.svg)](https://www.npmjs.com/package/dsh-draft-persistence)
 
 把**未发送的输入框草稿**按会话保存到 DSH 宿主，刷新页面、切换会话、重启宿主、换浏览器/手机后都能拿回来。
 
@@ -35,6 +36,7 @@ DSH 自带草稿持久化，但只写浏览器 `localStorage`（键 `dsh.convers
 请通过 DSH 插件管理器安装，不要手改 profile 的 `package.json` / `cordis.patch.yml`。
 
 1. 插件管理器（设置 → 插件，或 `plugin_manager` 工具）：
+   - npm 包名：`dsh-draft-persistence`
    - 仓库 spec：`ShawThua/dsh-draft-persistence`
    - 本地目录：`link:<checkout 的绝对路径>`
 2. 管理器会加依赖、选中 bundle 并重启该插件行。profile 开 HMR 时通常立即生效（结果里 `application: "applied"`），否则重启宿主。
@@ -139,4 +141,5 @@ scripts/e2e.mjs   真机端到端验证脚本
 ## 许可证
 
 MIT
+
 

@@ -1,6 +1,7 @@
 # dsh-draft-persistence
 
 [![CI](https://github.com/ShawThua/dsh-draft-persistence/actions/workflows/ci.yml/badge.svg)](https://github.com/ShawThua/dsh-draft-persistence/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/dsh-draft-persistence.svg)](https://www.npmjs.com/package/dsh-draft-persistence)
 
 Keep unsent composer drafts per Session on the **DSH Host**, so they survive a page reload, a Session switch, a Host restart, or opening the same Session from another device.
 
@@ -34,7 +35,8 @@ That is how a long unsent draft can disappear while the Session log is perfectly
 
 Install it through DSH's plugin manager — do not hand-edit the profile's `package.json` or `cordis.patch.yml`; the manager owns those files.
 
-1. **From this repository** (plugin manager, Settings → Plugins, or the `plugin_manager` agent tool):
+1. **From npm or this repository** (plugin manager, Settings → Plugins, or the `plugin_manager` agent tool):
+   - package name: `dsh-draft-persistence`
    - repository spec: `ShawThua/dsh-draft-persistence`
    - or a local checkout: `link:<absolute path to the checkout>`
 2. The manager adds the dependency, selects the bundle, and restarts that plugin row. Profile configuration HMR usually applies it immediately (look for `application: "applied"`); otherwise restart the Host.
@@ -149,4 +151,5 @@ Remove the bundle with the plugin manager. The stored drafts file is left in pla
 ## License
 
 MIT
+
 
