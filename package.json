@@ -1,6 +1,6 @@
 {
   "name": "dsh-draft-persistence",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Persist unsent composer drafts per Session on the DSH Host and restore them after reload, Session switch, or restart.",
   "license": "MIT",
   "author": "ShawThua",
