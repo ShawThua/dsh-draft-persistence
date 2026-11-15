@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 — 2026-11-15
+
+Documentation and release pipeline only.
+
+- Publish through GitHub Releases with npm trusted publishing (OIDC) and provenance.
+- No runtime changes; `index.js` and `client.js` are identical to 0.1.1.
+
 ## 0.1.1 — 2026-11-15
 
 Documentation only.
@@ -21,6 +28,8 @@ First public release.
 - Optimistic revisions with conflict detection; a newer Host copy wins on mount when nothing was typed yet.
 - Plaintext storage, loopback-only access, 400-Session / 300k-character caps.
 - 22 unit tests plus a headless-Chrome end-to-end script; verified on DSH 0.2.2-rc.1 and re-verified on 0.2.2-rc.3 (2026-11-14).
+
+
 
 
 
