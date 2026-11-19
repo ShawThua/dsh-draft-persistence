@@ -33,6 +33,17 @@ DSH 自带草稿持久化，但只写浏览器 `localStorage`（键 `dsh.convers
 
 ## 安装
 
+一条命令，然后重启宿主：
+
+```bash
+dsh plugin --profile web add dsh-draft-persistence
+```
+
+装完就这样。在任意会话打一段字（不发送），等一秒刷新页面——文字还在。
+
+<details>
+<summary>其它装法（界面、agent 工具、本地目录）</summary>
+
 请通过 DSH 插件管理器安装，不要手改 profile 的 `package.json` / `cordis.patch.yml`。
 
 1. 插件管理器（设置 → 插件，或 `plugin_manager` 工具）：
@@ -47,6 +58,8 @@ DSH 自带草稿持久化，但只写浏览器 `localStorage`（键 `dsh.convers
    ```
 
    然后在任意会话打一段字（不发送），等 1 秒刷新页面，文字会回来。
+
+</details>
 
 ## 原理
 

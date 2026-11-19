@@ -33,7 +33,18 @@ That is how a long unsent draft can disappear while the Session log is perfectly
 
 ## Install
 
-Install it through DSH's plugin manager — do not hand-edit the profile's `package.json` or `cordis.patch.yml`; the manager owns those files.
+One command, then restart the Host:
+
+```bash
+dsh plugin --profile web add dsh-draft-persistence
+```
+
+That is the whole install. Type something in a Session without sending, wait a second, refresh the page — the text is still there.
+
+<details>
+<summary>Other ways in (UI, agent tool, local checkout)</summary>
+
+Do not hand-edit the profile's `package.json` or `cordis.patch.yml`; the plugin manager owns those files.
 
 1. **From npm or this repository** (plugin manager, Settings → Plugins, or the `plugin_manager` agent tool):
    - package name: `dsh-draft-persistence`
@@ -48,6 +59,8 @@ Install it through DSH's plugin manager — do not hand-edit the profile's `pack
    ```
 
    Then open any Session, type something without sending, wait one second, and refresh the page — the text comes back.
+
+</details>
 
 ## How it works
 
