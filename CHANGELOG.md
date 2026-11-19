@@ -1,8 +1,11 @@
 # Changelog
 
-## 0.1.2 — 2026-11-19
+## 0.1.3 — 2026-11-19
 
 Packaging and documentation only; `index.js` and `client.js` are unchanged.
+
+`0.1.2` was published once during the 2026-11-15 test cycle and then unpublished, so npm
+refuses that version number forever (E400); this release takes `0.1.3` instead.
 
 - `package.json`: `keywords` gained `deepseek` and `web-ui`; `assets` is now shipped in `files`.
 - New 512×512 raster icon at `assets/icon.png`, used as the plugin-market tile.
